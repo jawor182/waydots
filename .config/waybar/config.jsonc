@@ -15,15 +15,15 @@
         "backlight",
         "battery",
         "pulseaudio",
-        "bluetooth",
         "network",
+        "bluetooth",
         "tray"
     ],
     "hyprland/workspaces":{
         "format":"{}"
     },
     "tray": {
-        "icon-size": 18,
+        "icon-size": 16,
         "spacing": 10
     },
     "clock": {
@@ -94,9 +94,10 @@
     "network": {
         "format-wifi": "",
         "format-ethernet": " ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "⚠",
         "tooltip":false,
-        "on-click":"$TERMINAL -e nmtui"
+        "on-click":"$TERMINAL -e speedtest",
+        "on-click-right":"$TERMINAL -e nmtui"
     },
      "bluetooth":{
         "format":"",
