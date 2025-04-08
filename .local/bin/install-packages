@@ -1,0 +1,176 @@
+#!/bin/bash
+
+apps=(
+calibre
+gtklock
+tmux
+discord
+firefox
+keepassxc
+neovim
+nitrogen
+qt5ct
+obsidian
+solaar
+thunderbird
+vim
+virt-manager
+virt-viewer
+spotify-launcher
+thunar
+zsh
+waybar
+hyprland
+foot
+nwg-look
+rofi-wayland
+greetd
+greetd-regreet
+)
+libs=(
+swaybg
+hyprpicker
+hyprcursor
+hyprgraphics
+hypridle
+hyprland-protocols
+hyprland-qt-support
+hyprland-qtutils
+hyprlang
+hyprpolkitagent
+xdg-desktop-portal-hyprland 
+brightnessctl
+uwsm
+dash
+grim
+slurp
+checkbashisms
+ntfs-3g    
+cargo
+cups 
+cups-pdf
+cups-filters
+system-config-printer
+gutenprint
+foomatic-db-gutenprint-ppds
+clang
+dunst
+dnsmasq
+ffmpeg
+go
+gvfs-afc
+gvfs
+ifuse
+iftop
+iotop
+libimobiledevice
+libvirt
+lua
+lm_sensors
+luarocks
+mokutil
+man-db
+man-pages
+nodejs
+npm
+openbsd-netcat
+pamixer
+picom
+playerctl
+pciutils
+usbutils
+php
+pnpm
+powertop
+protobuf
+pulsemixer
+python
+qemu-full
+ripgrep
+ruby
+rust
+syncthing
+tlp
+usbmuxd
+usbutils
+unzip
+wl-clipboard
+yarn
+zathura-pdf-poppler
+zbar
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
+bluez-utils
+os-prober
+perl-file-mimeinfo
+)
+cli=(
+wikiman
+perl-image-exiftool
+bat
+btop
+inxi
+fastfetch
+fzf
+bluetui
+figlet
+cowsay
+github-cli
+speedtest-cli
+lshw
+htop
+jq
+neofetch
+pulsemixer
+stow
+tldr
+yazi
+zathura
+wlr-randr
+cmatrix
+)
+other=(
+noto-fonts-emoji
+noto-fonts
+inter-font
+ttf-dejavu 
+ttf-font-awesome 
+ttf-hanazono 
+ttf-jetbrains-mono-nerd 
+ttf-liberation 
+ttf-nerd-fonts-symbols 
+ttf-nerd-fonts-symbols-common 
+ttf-sazanami 
+)
+yay_stuff=(
+cava
+brave-bin
+bluetuith-bin
+selectdefaultapplication-git
+gtk-theme-arc-gruvbox-git
+qt5gtk2
+qt6gtk2
+waypaper
+pipes.sh
+ventoy-bin
+)
+install_packages() {
+    local category=$1
+    shift
+    local packages=("$@")
+    echo "Installing $category ..."
+    sudo pacman -Syu "${packages[@]}"
+}
+install_packages_aur() {
+    local category=$1
+    shift
+    local packages=("$@")
+    echo "Installing $category ..."
+    yay -Syu "${packages[@]}"
+}
+install_packages "apps" "${apps[@]}"
+install_packages "libs" "${libs[@]}"
+install_packages "cli" "${cli[@]}"
+install_packages "other" "${other[@]}"
+install_packages_aur "yay" "${yay_stuff[@]}"
