@@ -10,20 +10,20 @@
         "clock"
     ],
     "modules-right": [
+        "tray",
         "cpu",
         "memory",
         "backlight",
         "battery",
         "pulseaudio",
-        "network",
         "bluetooth",
-        "tray"
+        "network",
     ],
     "hyprland/workspaces":{
         "format":"{}"
     },
     "tray": {
-        "icon-size": 16,
+        "icon-size": 18,
         "spacing": 10
     },
     "clock": {

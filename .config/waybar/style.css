@@ -16,23 +16,20 @@ window#waybar {
     background-color: @bg;
     color: @fg;
     transition-property: background-color;
-    border-radius:5px;
+    border-radius:6px;
 }
-#cpu,#pulseaudio,#memory,#backlight,#battery,#clock,#bluetooth {
+#cpu,#network,#bluetooth,#tray,#pulseaudio,#memory,#backlight,#battery,#clock,#bluetooth {
     padding:5px;
-}
-#network{
-    padding:5px;
-    padding-right:10px;
-}
-#bluetooth{
-    padding-right: 10px;
 }
 #cpu{
     color:@red;
 }
 #memory{
     color:@purple;
+}
+#network{
+    padding: 0px;
+    padding-right: 15px;
 }
 #pulseaudio{
     color:@yellow;
@@ -42,9 +39,6 @@ window#waybar {
 }
 #network,#bluetooth{
     color: @blue;
-}
-#tray{
-    padding-right: 10px;
 }
 #battery{
     color:@green;
