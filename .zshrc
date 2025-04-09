@@ -109,19 +109,19 @@ alias awi="wikiman -s arch"
 alias wi="wikiman"
 alias lf="lfub"
 
-# export FZF_DEFAULT_OPTS=" \
-# --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
-# --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-# --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
-# --color=selected-bg:#45475a \
-# --multi"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--color=border:#313244,label:#cdd6f4"
 
 # Custom keybinds
 bindkey -s '^S' 'fzf -e\n'
-bindkey -s '^R' 'source ~/dots/.zshrc \n'
-bindkey -s '^X' 'source ~/dots/.xprofile \n'
+bindkey -s '^R' 'source ~/waydots/.zshrc \n'
 bindkey -s '^N' '$EDITOR .\n'
 bindkey -s '^E' '$EDITOR $(fzf -e)\n'
 bindkey -s '^O' 'cd ~/Obsidian && $EDITOR .\n'
+
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
