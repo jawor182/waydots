@@ -30,11 +30,14 @@ window#waybar {
     transition-property: background-color;
     border-radius:6px;
 }
-#cpu,#network,#bluetooth,#tray,#pulseaudio,#memory,#backlight,#battery,#clock,#bluetooth {
+#cpu,#network,#bluetooth,#tray,#memory,#backlight,#battery,#clock,#bluetooth {
     padding:5px;
 }
 #cpu{
     color:@red;
+}
+#pulseaudio{
+    padding-right: 8px;
 }
 #memory{
     color:@purple;
