@@ -101,13 +101,12 @@ alias dcn="cd ~/waydots/.config"
 alias C="cd ~/Coding"
 alias CS="cd ~/Coding/szkola"
 alias ipa="ip a"
-alias O="cd ~/Obsidian"
+alias o="cd ~/Obsidian"
 alias no="cd ~/Obsidian && $EDITOR ."
 alias cm="cmatrix"
 alias pp="pipes.sh"
 alias awi="wikiman -s arch"
 alias wi="wikiman"
-alias lf="lfub"
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \

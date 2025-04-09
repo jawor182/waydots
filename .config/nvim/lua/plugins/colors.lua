@@ -52,9 +52,9 @@ return {
 					light = "latte",
 					dark = "mocha",
 				},
-				transparent_background = true,
-				show_end_of_buffer = true,
-				term_colors = true,
+				transparent_background = false,
+				show_end_of_buffer = false,
+				term_colors = false,
 				dim_inactive = {
 					enabled = false,
 					shade = "dark",
@@ -87,7 +87,7 @@ return {
 					treesitter = true,
 					notify = false,
 					mini = {
-						enabled = true,
+						enabled = false,
 						indentscope_color = "",
 					},
 				},

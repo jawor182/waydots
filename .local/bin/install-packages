@@ -149,6 +149,7 @@ brave-bin
 bluetuith-bin
 selectdefaultapplication-git
 gtk-theme-arc-gruvbox-git
+catppuccin-gtk-theme-mocha
 qt5gtk2
 qt6gtk2
 waypaper
