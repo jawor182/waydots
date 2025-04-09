@@ -97,7 +97,7 @@
         "format-disconnected": "⚠",
         "tooltip":false,
         "on-click":"$TERMINAL -e speedtest",
-        "on-click-right":"$TERMINAL -e nmtui"
+        "on-click-right":"$TERMINAL -e nm-connection-editor"
     },
      "bluetooth":{
         "format":"",
