@@ -67,8 +67,8 @@ window#waybar {
 #workspaces button:first-child{
     padding: 5px;
     color: @fg;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
 }
 #workspaces button.active{
     background-color: @orange;
@@ -77,8 +77,8 @@ window#waybar {
 #workspaces button.active:first-child{
     background-color: @orange;
     border-radius:0px;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
 }
 #workspaces button:hover {
     background: @purple;
@@ -87,8 +87,8 @@ window#waybar {
 #workspaces button:hover:first-child {
     background: @purple;
     border-radius:0px;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
 }
 
 #workspaces button.focused {
@@ -96,14 +96,14 @@ window#waybar {
 }
 #workspaces button.focused:hover:first-child {
     background-color: #64727D;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
 }
 
 #workspaces button.urgent:hover {
     background-color: @red;
     border-radius:0px;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
 }
 

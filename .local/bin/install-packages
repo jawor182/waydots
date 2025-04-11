@@ -146,6 +146,7 @@ ttf-sazanami
 yay_stuff=(
 cava
 brave-bin
+librewolf-bin
 bluetuith-bin
 selectdefaultapplication-git
 gtk-theme-arc-gruvbox-git

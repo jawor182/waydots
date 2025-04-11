@@ -29,11 +29,11 @@
     "clock": {
         "format" : "{:%a, %H:%M}",
         "format-alt": "{:%A, %d.%m.%Y}",
-        "tooltip":false
+        "tooltip": false
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip-format":"{avg_frequency}"
     },
     "memory": {
         "format": "{}% ",
